@@ -78,12 +78,13 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.arra.JetPackComposeTutorial.ui.theme.Home
-import com.arra.JetPackComposeTutorial.ui.theme.Profile
+import com.arra.JetPackComposeTutorial.Activities.Home
+import com.arra.JetPackComposeTutorial.Activities.Notification
+import com.arra.JetPackComposeTutorial.Activities.Profile
+import com.arra.JetPackComposeTutorial.Activities.Settings.Settings
+import com.arra.JetPackComposeTutorial.ui.theme.CreateReels
 import com.arra.JetPackComposeTutorial.ui.theme.Screens
 import com.arra.JetPackComposeTutorial.ui.theme.Search
-import com.arra.JetPackComposeTutorial.ui.theme.Settings
-import com.arra.JetPackComposeTutorial.ui.theme.Notification
 import com.arra.JetPackComposeTutorial.ui.theme.PostScreen
 import kotlinx.coroutines.launch
 
@@ -763,6 +764,9 @@ fun LearnNavigationMenuWithBottomSheet() {
                 composable(Screens.PostScreen.screen) {
                     PostScreen()
                 }
+                composable(Screens.CreateReels.screen) {
+                    CreateReels()
+                }
                 composable(Screens.Settings.screen) {
                     Settings()
                 }
@@ -792,6 +796,9 @@ fun LearnNavigationMenuWithBottomSheet() {
                         BottomSheetItems(Icons.Default.PlayArrow, "Create a Reel") {
                             showBottomSheet = false
                             Toast.makeText(context, "Create a Reel Clicked", Toast.LENGTH_SHORT).show()
+                            navController.navigate(Screens.CreateReels.screen) {
+                                popUpTo(0)
+                            }
                         }
                         BottomSheetItems(Icons.Default.Camera, "Go Live") {
                             showBottomSheet = false
