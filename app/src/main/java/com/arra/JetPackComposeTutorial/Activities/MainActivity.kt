@@ -495,6 +495,9 @@ fun LearnBottomAppBar() {
             composable(Screens.PostScreen.screen) {
                 PostScreen()
             }
+            composable(Screens.CreateReels.screen) {
+                CreateReels()
+            }
         }
         if (showBottomSheet) {
             ModalBottomSheet(
@@ -513,7 +516,7 @@ fun LearnBottomAppBar() {
                             popUpTo(0)
                         }
                     }
-                    BottomSheetItems(Icons.Default.ThumbUp, "Create Reels") {
+                    BottomSheetItems(Icons.Default.PlayArrow, "Create Reels") {
                         showBottomSheet = false
                         navController.navigate(Screens.CreateReels.screen) {
                             popUpTo(0)
