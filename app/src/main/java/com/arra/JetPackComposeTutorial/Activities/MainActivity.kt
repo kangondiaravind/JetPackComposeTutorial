@@ -82,10 +82,10 @@ import com.arra.JetPackComposeTutorial.Activities.Home
 import com.arra.JetPackComposeTutorial.Activities.Notification
 import com.arra.JetPackComposeTutorial.Activities.Profile
 import com.arra.JetPackComposeTutorial.Activities.Settings.Settings
-import com.arra.JetPackComposeTutorial.ui.theme.CreateReels
+import com.arra.JetPackComposeTutorial.Activities.CreateReels
 import com.arra.JetPackComposeTutorial.ui.theme.Screens
-import com.arra.JetPackComposeTutorial.ui.theme.Search
-import com.arra.JetPackComposeTutorial.ui.theme.PostScreen
+import com.arra.JetPackComposeTutorial.Activities.Search
+import com.arra.JetPackComposeTutorial.Activities.PostScreen
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {

@@ -1,4 +1,4 @@
-package com.arra.JetPackComposeTutorial.ui.theme
+package com.arra.JetPackComposeTutorial.Activities
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,7 +16,7 @@ class DashBoard {
     @Composable
     fun showDashboard() {
         Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Text(text = "DashBoard", color = Color.Green, fontSize = 30.sp )
+            Text(text = "DashBoard", color = Color.Green, fontSize = 30.sp)
         }
     }
 
